@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      .zf{
+        width: 700px;
+        margin: 0px;
+        float: left;
+      }
+      .zfSay {
+        position: absolute;
+        background-color: cornflowerblue;
+        border: 2px solid brown;
+        height: 30px;
+        width: 300px;
+        top: 95px;
+        left: 295px;
+      }
+
+      .treat {
+        display:block;
+        padding-top: 50px;
+      }
+      .jn{
+        padding-left:150px ;
+        
+      }
+      .jn2{
+        padding-left: 50px;
+      }
+      .jn3{
+        padding-left: 50px;
+      }
+      .nm{
+        float: right;
+        width: 650px;
+      }
+      #nmStatus{
+        margin-bottom: 0px;
+      }
+      .h2{
+        float: right;
+        width: 650px;
+      }
+      .nmtreat {
+        display:block;
+        padding-top: 50px;
+      }
+      .nmjn{
+        padding-left:150px ;
+        
+      }
+      .nmjn2{
+        padding-left: 50px;
+      }
+      .nmjn3{
+        padding-left: 50px;
+      }
+      #nmSay {
+        position: relative;
+        background-color: cornflowerblue;
+        border: 2px solid brown;
+        height: 30px;
+        width: 300px;
+        top: 20px;
+        left: 295px;
+      }
+      .nmyell{
+        position:relative;
+        top :-68px;
+      }
+      #bloodbox, #nmbloodbox{
+        border: black solid 2px;
+        width: 600px;
+      }
+      #blood, #nmblood{
+        background-color: rgb(52, 185, 52);
+        height: 25px;
+        width: 600px;
+      }
+      .hide{
+        position: absolute;
+        top: 160px;
+        left: 15px;
+        display: none;
+      }
+      #btu{
+        padding-bottom: 15px;
+        width: 300px;
+        height: 300px;
+      }
+      .hide2{
+        position: relative;
+        left: 330px;
+        top: -330px;
+        display: none;
+      }
+      #btu1{
+        padding-bottom: 15px;
+        width: 300px;
+        height: 300px;
+      }
+      .hideyd{
+        display: none;
+        position: relative;
+        left: -305px;
+        top: -40px;
+      }
+      #yingduan{
+        padding-bottom: 45px;
+        padding-top: 40px;
+      }
+      #yd{
+        padding-bottom: 45;     
+         padding-top: 40px;
+      }
+      .hideydm{
+        display: none;
+        position: relative;
+        left: 335px;
+        top: -300px;
+        padding-bottom: 10px;
+      }
+    </style>
+</head>
+<body>
+  <div class="zf">
+    <h1 id="zfStatus">我的状态</h1>
+    <h2>我们即将对战牛魔！</h2>
+    <img id="btn" class="clothe" id="clothe" src="./images/图片1.jpg" style="CURSOR: pointer" onclick="zf.Checkclothes()">
+    <img src="./images/cat.jpg" id="btu" class="hide">
+    <img id="yin" class="clothe1" src="./images/图片2.jpg" style="CURSOR: pointer" onclick="zf.Checkclothes1()">
+    <img src="./images/cat1.jpg" id="btu1" class="hide2">
+    <div id="bloodbox"><div id="blood"></div></div>
+    <img class="treat"src="./images/治疗.jpg" style="CURSOR:pointer " onclick="zf.Treat()">
+    <img class="jn" id ="demo" src="./images/1技能.jpg" style="CURSOR:pointer " >
+    <img class="jn2" src="./images/2技能.jpg" style="CURSOR:pointer " >
+    <img class="jn3" src="./images/大招.jpg" style="CURSOR:pointer " >
+    <div id="zfSay" class="zfSay"><div id="zfyell" class="zfyell"></div></div>
+  </div>
+  <div class="nm">
+    <h1 id="nmStatus">我的状态</h1>
+    <h2 class="h2">我们即将对战张飞！</h2>
+    <div id="nmSay" class="nmSay"><div id="nmyell" class="nmyell"></div></div>
+    <img id="y" class="nmclothe" id = "nmclothe"src="./images/图片3.jpg" style="CURSOR: pointer" onclick="nm.Checknmclothes()">
+    <img src="./images/yingduan.jpg" id="yingduan" class="hideyd">
+    <img id="d" class="nmclothe1" src="./images/图片4.jpg" style="CURSOR: pointer" onclick="nm.Checknmclothes1()">
+    <img src="./images/yingduan2.jpg" id="yd" class="hideydm">
+    <div id="nmbloodbox"><div id="nmblood"></div></div>
+    <img class="nmtreat"src="./images/治疗.jpg" style="CURSOR:pointer " onclick="nm.Treatnm()">
+    <img class="nmjn" src="./images/nm1技能.jpg" style="CURSOR:pointer " >
+    <img class="nmjn2" src="./images/nm2技能.jpg" style="CURSOR:pointer " >
+    <img class="nmjn3" src="./images/nm3技能.jpg" style="CURSOR:pointer " >
+  </div>
+  <script src="张飞.js"></script>
+</body>
+</html>

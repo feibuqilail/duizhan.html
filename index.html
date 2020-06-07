@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .cat{
+      background-image: url(./images/美短.jpg);
+      width: 461px;
+      height: 400px;
+    }
+    .catSay {
+      position: absolute;
+      background-color: cornflowerblue;
+      border: 2px solid brown;
+      height: 20px;
+      width: 165px;
+      top: 350px;
+      left: 300px;
+    }
+    #catStatus{
+      color: tomato;
+    }
+    .catclothe{
+      position: absolute;
+      background-image: url(./images/11.jpg);
+      left: 500px;
+      top: 60px;
+    }
+    .catclothe:hover{
+      transform: translateY(600px);
+      transition-duration: 10s;
+    }
+    .catclothe1{
+      position: absolute;
+      left: 700px;
+      top: 60px;
+    }
+    .catclothe2{
+      position: absolute;
+      top: 60px;
+      left: 910px;
+    }
+    .newclothes{
+      position: absolute;
+      left: 670px;
+      top: 1px;
+    }
+  </style>
+</head>
+<body>
+  <div class="cat"></div>
+  <h1 id="catStatus">我将显示我的状态</h1>
+  <div id="catSay" class="catSay"><div id="yell" class="yell"></div></div>
+  <button onclick="cat.feed()">喂它！</button>
+  <button onclick="cat.run()">跑起来！</button>
+  <button onclick="cat.resurrect()">复活吧，我的猫仔！</button>
+  <h2 class="newclothes">来选个衣服吧</h2>
+  <img class="catclothe" src="./images/图片1 (2).jpg" style="CURSOR: pointer" onclick="cat.Checkclothes()">
+  <img class="catclothe1" src="./images/图片2 (2).jpg" style="CURSOR: pointer" onclick="cat.Checkclothes1()">
+  <img class="catclothe2" src="./images/图片3 (2).jpg" style="CURSOR: pointer" onclick="cat.Checkclothes2()">
+  <a href="/张飞.html"> 我们去找牛魔玩</a>
+  <script src="newindex.js"></script>
+</body>
+</html>
